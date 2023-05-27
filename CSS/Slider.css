@@ -1,0 +1,144 @@
+.slick-list {
+    overflow: hidden;
+
+}
+.slick-track{
+    display: flex;
+}
+.flex_column{
+    min-width: 0;
+}
+.slaider2{
+   display: grid;
+   align-self: center;
+   position: relative;
+   min-width: 0;
+}
+
+.slaider
+{
+    display: grid;
+    position: relative;
+    min-width: 0;
+}
+.slaider .slaider_item
+{
+    margin-left: 90px;
+}
+
+.slaider .slaider_item img
+{
+    width: 740px;
+    height: 450px;
+    
+}
+.slaider2 .slaide2_item img
+{   
+  width: 630px; 
+  height: 472px;
+}
+.slaider2 .slaide2_item .slick-slide .slick-current .slick-active
+{
+right: 0;
+}
+
+
+.slaider .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    font-size: 0;
+    border: none;
+    height: 32;
+    width: 32;
+}
+
+.slaider .slick-arrow.slick-prev{
+    left: 20px;
+    background: url(../image/sl-l.png)   no-repeat;
+}
+.slaider .slick-arrow.slick-next{
+    right:  20px;
+    background: url(../image/sl-r.png)   no-repeat;
+}
+
+.btn_sl{
+    grid-column: 1/span 2;
+    align-self: center;
+    justify-self: center;
+}
+.btn_sl ul
+{
+  display: grid;
+  grid-template-columns: repeat(5,40px);
+  gap: 10px;
+    justify-items: center;
+    align-items: center;
+    list-style: none;
+}
+
+.btn_sl button{
+
+    font-size: 0;
+    width: 40px;
+    height: 4px;
+    background-color: #E4E5E6;
+    border-radius: 100px;
+    border: 0;
+    
+}
+
+.btn_sl li.slick-active button
+{ 
+  background: #DCB658;
+  border-radius: 100px;
+}
+
+.slaider2 .slick-arrow{
+    position: absolute;
+    top: 50%;
+    z-index: 1000;
+    font-size: 0;
+    border: none;
+    height: 32;
+    width: 32;
+}
+.slaider2 .slick-arrow.slick-prev{
+    left: 0;
+    background: url(../image/sl-l.png)   no-repeat;
+}
+.slaider2 .slick-arrow.slick-next{
+    right:  0;
+    background: url(../image/sl-r.png)   no-repeat;
+}
+
+.slaider2 .slick-dots
+{
+    display: grid;
+    grid-template-columns: repeat(5,40px);
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.slaider2 .slick-dots li
+{
+    
+    list-style: none;
+}
+
+.slaider2 .slick-dots button
+{
+    font-size: 0;
+    width: 40px;
+    height: 4px;
+    background-color: #E4E5E6;
+    border-radius: 100px;
+    border: 0;
+}
+
+.slaider2 .slick-dots li.slick-active button
+{
+    background: #DCB658;
+    border-radius: 100px;
+}

@@ -1,0 +1,277 @@
+ .container {
+    display: grid;
+    grid-template:
+    "headre2" 10px
+    "header" auto
+    "main" auto
+    "prim" auto 
+    "free" auto
+    "inf" auto
+    "obr" auto
+    "card" auto
+    "footer" auto
+    "footer2" 60px;
+    gap:  0;
+    background-color: #f5f5f5;
+    padding: 0;
+    margin: 0;
+ }
+
+img
+{
+   object-fit: cover;
+}
+.el-0
+{
+  background-color: #000000;
+}
+
+ 
+   
+ .el-1
+ {
+   
+    grid-area: header;
+    display: grid;
+    grid-template-columns: repeat(3,auto);
+    gap: 5px;
+    background-color: white;
+    margin:  0;
+ }
+ .he-1
+ {
+   display: grid;
+   justify-items: center;
+   align-items: center;
+ }
+ .he-2
+ {
+   display: grid;
+   grid-template-columns: repeat(4,auto);
+   align-self: center;
+ }
+ .he-3
+ {
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   grid-template-rows: 1fr 1fr;
+ }
+ .menu-3-2
+ {
+   grid-column-start: 1;
+   grid-row-start: 2;
+ }
+
+
+ .el-2
+ {
+    
+    display: grid;
+    grid-template-columns: auto 740px;    
+
+   margin: 60 75 0 75;
+   padding: 0;
+
+ }
+
+.bloc-2
+{
+   display: grid;
+   grid-template-rows: repeat(3,auto);
+   margin: 0px;
+}
+
+.spbloc-2 li
+{
+
+   list-style-image: url(marker.png);   
+   margin-bottom: 15;
+}
+
+.imbloc-2
+{
+   align-self: center;
+}
+
+
+
+ .el-3
+ {
+    
+    display: grid;
+    grid-template-columns: repeat(4,minmax(75px,300px));
+    grid-template-rows: repeat(3,auto);
+    align-self: center;
+    justify-self: center;
+    gap: 30px;
+  
+   }
+ .h1bloc3{
+   grid-column: 1 /span 4;
+}
+ .imbloc-3
+ {
+   display: grid;
+   grid-template-rows: auto auto;
+ }
+ .imbloc-4
+ {
+  display: grid;
+  grid-template-rows: auto auto;
+ }
+
+ .el-4
+ {
+    grid-area: free;
+    display: grid;
+    grid-template-columns: auto auto;
+    background-image: url(fonbloc-4.png);
+    background-repeat: no-repeat;
+    justify-items: center;
+    align-items: center;
+    margin: 0;
+    gap: 30px;
+
+ }
+ .logobloc-4
+ {
+   grid-column-start: 1;
+   object-fit: cover;
+   width: 850;
+   height: 400;
+   margin-bottom: 50px;
+ }
+ .h1bloc4
+ {
+   justify-self: start;
+   grid-column: 1 /span 2;
+ }
+ .fbloc-4
+ {
+   display: grid;
+   grid-template-rows: repeat(5,60px);
+   justify-items: center;
+   align-items: center;
+   width: 410;
+   padding: 0;
+   margin: 0;
+   gap: 20px;
+ }
+.Dann
+ {
+   width: 350px;
+   height: 60px;
+   padding: 21 0 21 60;
+ }
+  .imge
+ {
+   position: absolute;
+   width: 20px;
+   height: 20px;
+   margin: 20 0 20 20;
+ }
+
+ .f1mintext
+ {
+   display: grid;
+   grid-template-columns: auto auto;
+   justify-items: center;
+   align-items: center;
+ }
+ .f1mintext__chekbox
+ {
+   width: 16px;
+   height: 16px;
+ }
+
+ .el-5
+ {
+    grid-area: inf ;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+ }
+
+ .el-6
+ {
+    grid-area: obr ;
+    align-self: center;
+    justify-self: center;
+    margin: 100px;
+ }
+ .fbloc-6
+ {
+  display: grid;
+    grid-template-columns: repeat(3,350px);
+    grid-template-rows: repeat(3,1fr);
+    gap: 30px;
+    align-items: center;
+    justify-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+    
+ }
+
+ .formtebl-6
+ {
+  align-self: center;
+  justify-self: center;
+  grid-column: 1/span 3;
+ }
+
+ .f2mintext
+ {
+  align-self: center;
+  justify-self: center;
+  grid-column: 1/span 3;
+ }
+ .imge2
+ {
+  position: absolute;
+  padding: 20;
+ }
+
+
+ .el-7
+ {
+    grid-area: card;
+    align-self: center;
+    justify-self: center;
+ }
+ .el-8
+ {
+    grid-area: footer;
+    display: grid;
+    grid-template-columns: repeat(5,auto);
+    align-items: center;
+    justify-items: center;
+    gap: 73px;
+    
+    padding: 0;
+    background: #1C1D1E;
+ }
+ .el-9
+ {
+    grid-area: footer2;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    background-color: black;
+    margin: 0;
+    
+    justify-items: center;
+ }
+
+ 
+ @media(max-width:320px)  {
+  .el-2
+  {
+    grid-template-columns: auto;
+    grid-template-rows: repeat(3,auto);
+  }
+  .h1bloc3
+  {
+    grid-column: 1/span 2;
+  }
+  
+  
+}
